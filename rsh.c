@@ -70,7 +70,7 @@ int main() {
 		else if (strcmp(cmd, "help") == 0) {
             printf("The allowed commands are:\n");
     		for (int i = 0; i < 12; ++i) {
-        		printf("%d: %s\n", i + 1, allowed_cmds[i]);
+        		printf("%d: %s\n", i + 1, allowed[i]);
 			}
         }
 		
@@ -81,7 +81,7 @@ int main() {
 
 			else if (argc == 2) {
 				if (chdir(argv[1]) != 0) {
-					printf("-rsh: cd: failed to change directory\n"):
+					printf("-rsh: cd: failed to change directory\n");
 				}
 		}
 
